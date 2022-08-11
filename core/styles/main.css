@@ -35,7 +35,7 @@ a{
 .top-wrapper .member{
     position: absolute;
     top: 0px;
-    right: 32px;
+    right: 16px;
     padding: 32px;
     line-height: unset;
 }
@@ -49,7 +49,7 @@ a{
     border-radius: 25px;
     position: relative;
     box-shadow: #000 0px 10px 20px;
-    background: linear-gradient(45deg, #181712, #201812);
+    background: linear-gradient(135deg, #201812, #181712);
 }
 
 .top-wrapper .member .mblock:hover{
@@ -107,7 +107,7 @@ a{
 }
 
 .content-wrapper .content .bcat{
-    background: #161313;
+    background: linear-gradient(135deg, #181515,#161313);
     border-radius: 15px;
     padding: 10px;
     box-shadow: #000 0px 10px 25px;
@@ -179,4 +179,12 @@ a{
 
 .content .tree ul li:last-child::after{
     display: none;
+}
+
+.bot-wrapper{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 32px;
 }
