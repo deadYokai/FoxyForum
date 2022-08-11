@@ -129,9 +129,15 @@ p {
 .aboutText {
     margin: 0 30px 30px 30px;
 }
+.userInfoOther > div {
+    width: 200px;
+}
 .userInfoLinks > div{
     display: flex;
     justify-content: space-evenly;
+}
+.userInfoLinks > div > a{
+    width: 100px;
 }
 
 
