@@ -99,7 +99,49 @@
             </div>
             <div class="userSettings infoBlock" id="Settings">
                 <h2>Settings</h2>
-                <div></div>
+                <form action="/settings.php" class="settingsForm">
+                    <div class="form-group">
+                        <label for="user_profile_ava">Avatar</label>
+                        <input class="form-control" type="file" name="user[profile_ava]" id="user_profile_ava">
+                    </div>
+                    <div class="form-group">
+                        <label for="user_profile_name">Name</label>
+                        <input class="form-control" type="text" name="user[profile_name]" id="user_profile_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="user_profile_email">Email</label>
+                        <input class="form-control" type="text" name="user[profile_email]" id="user_profile_email">
+                    </div>
+                    <div class="form-group">
+                        <label for="user_profile_oldpassword">Old Password</label>
+                        <input class="form-control" type="text" name="user[profile_oldpassword]" id="user_profile_oldpassword">
+                        <label for="user_profile_password">New Password</label>
+                        <input class="form-control" type="text" name="user[profile_password]" id="user_profile_password">
+                    </div>
+                    <div class="form-group">
+                        <label for="user_profile_bio">Bio</label>
+                        <textarea class="form-control" placeholder="Tell us a little bit about yourself" data-input-max-length="160" data-warning-text="{{remaining}} remaining" name="user[profile_bio]" id="user_profile_bio"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_profile_signature">Signature</label>
+                        <input class="form-control" type="text" name="user[profile_signature]" id="user_profile_signature">
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="user_profile_theme">Signature</label>
+                        <input class="form-control" type="text" name="user[profile_theme]" id="user_profile_theme">
+                    </div> -->
+                    <div class="form-group">
+                        <label for="user_profile_git">Git</label>
+                        <input class="form-control" type="text" name="user[profile_git]" id="user_profile_git">
+                        <label for="user_profile_instagram">Instagram</label>
+                        <input class="form-control" type="text" name="user[profile_instagram]" id="user_profile_instagram">
+                        <label for="user_profile_youtube">YouTube</label>
+                        <input class="form-control" type="text" name="user[profile_youtube]" id="user_profile_youtube">
+                    </div>
+                    <div class="btn-form-wrapper">
+                        <button type="submit" data-view-component="true" class="btn-form">Update profile</button>
+                    </div>                    
+                </form>
             </div>
         </div>
     </div>
