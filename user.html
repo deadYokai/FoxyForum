@@ -1,0 +1,148 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>FoxyForum - User Page</title>    
+    <meta name="Description" content="Just User Page">
+    <meta property="og:title" content="FoxyForum - User Page">
+    <meta property="og:description" content="Just User Page">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:image" content="/image/logo.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Apple (Україна)">
+
+    <link rel="stylesheet" href="core/styles/userPage.css">
+</head>
+<body>
+    <div class="page">
+        <div class="navigation">
+            <div></div>    
+            <a href="#Info">About</a>
+            <a href="#Achivements">Achivments</a>
+            <a href="#Warnings">Warning</a>
+            <a href="#Signature">Signature</a>
+            <a href="#Settings">Settings</a>
+        </div>
+        <div class="infopage">
+            <div class="userInfo infoBlock" id="Info">
+                <h2>About</h2>
+                <!-- <h2>User Infox</h2> -->
+                <div class="userInfoAbout">
+                    <div class="aboutUser">
+                        <img src="core/image/profileImage.png" alt="Profile">
+                        <h4>Nickname</h4>
+                    </div>                    
+                    <div class="aboutText">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium eligendi odio ab voluptatibus consequatur quis accusamus harum atque aliquid officiis! Vel aliquam ea, iure consequatur ipsum distinctio dolor tempora impedit.</p>
+                    </div>
+                </div>            
+                <div class="userInfoOther">
+                    <div class="userInfoRegistration">
+                        <h4>Registration</h3>
+                        <p>--.--.----</p>
+                    </div>
+                    <div class="userInfoBirth">
+                        <h4>Birth date</h3>
+                        <p>--.--.----</p>
+                    </div>
+                    <div class="userInfoRank">
+                        <h4>Rank:</h3>
+                        <p>Newbie</p>
+                    </div>
+                </div>                
+                <div class="userInfoLinks">
+                    <h4>Social Networks</h3>
+                    <div>
+                        <a href="#">Git</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">YouTube</a>
+                    </div>                    
+                </div>
+            </div>
+            <div class="userAchivments infoBlock" id="Achivements"> 
+                <h2>Achivments</h2>
+                <div class="achivementsBox">
+                    <div class="achivment">
+                        <img src="core/image/achivment.png" alt="achivment">
+                        <p>Achivment1</p>
+                    </div>
+                    <div class="achivment">
+                        <img src="core/image/achivment.png" alt="achivment">
+                        <p>Achivment1</p>
+                    </div>
+                    <div class="achivment">
+                        <img src="core/image/achivment.png" alt="achivment">
+                        <p>Achivment1</p>
+                    </div>
+                    <div class="achivment">
+                        <img src="core/image/achivment.png" alt="achivment">
+                        <p>Achivment1</p>
+                    </div>
+                    <div class="achivment">
+                        <img src="core/image/achivment.png" alt="achivment">
+                        <p>Achivment2</p>
+                    </div>
+                    <div class="achivment">
+                        <img src="core/image/achivment.png" alt="achivment">
+                        <p>Achivment3</p>
+                    </div>
+                </div>                
+            </div>
+            <div class="userWarnings infoBlock" id="Warnings">
+                <h2>Warning</h2>
+                <p>Warning 1</p>
+                <p>Warning 1</p>
+                <p>Warning 1</p>
+            </div>
+            <div class="userSignature infoBlock" id="Signature">
+                <h2>Signature</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quod dolorem aspernatur amet! Repellendus molestias optio, tempora rem recusandae eligendi quam illo perspiciatis? Culpa exercitationem dolore mollitia fuga qui itaque.</p>
+            </div>
+            <div class="userSettings infoBlock" id="Settings">
+                <h2>Settings</h2>
+                <form action="/settings.php" class="settingsForm">
+                    <div class="form-group">
+                        <label for="user_profile_ava">Avatar</label>
+                        <input class="form-control" type="file" name="user[profile_ava]" id="user_profile_ava">
+                    </div>
+                    <div class="form-group">
+                        <label for="user_profile_name">Name</label>
+                        <input class="form-control" type="text" name="user[profile_name]" id="user_profile_name">
+                    </div>
+                    <div class="form-group">
+                        <label for="user_profile_email">Email</label>
+                        <input class="form-control" type="text" name="user[profile_email]" id="user_profile_email">
+                    </div>
+                    <div class="form-group">
+                        <label for="user_profile_oldpassword">Old Password</label>
+                        <input class="form-control" type="text" name="user[profile_oldpassword]" id="user_profile_oldpassword">
+                        <label for="user_profile_password">New Password</label>
+                        <input class="form-control" type="text" name="user[profile_password]" id="user_profile_password">
+                    </div>
+                    <div class="form-group">
+                        <label for="user_profile_bio">Bio</label>
+                        <textarea class="form-control" placeholder="Tell us a little bit about yourself" data-input-max-length="160" data-warning-text="{{remaining}} remaining" name="user[profile_bio]" id="user_profile_bio"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_profile_signature">Signature</label>
+                        <input class="form-control" type="text" name="user[profile_signature]" id="user_profile_signature">
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="user_profile_theme">Signature</label>
+                        <input class="form-control" type="text" name="user[profile_theme]" id="user_profile_theme">
+                    </div> -->
+                    <div class="form-group">
+                        <label for="user_profile_git">Git</label>
+                        <input class="form-control" type="text" name="user[profile_git]" id="user_profile_git">
+                        <label for="user_profile_instagram">Instagram</label>
+                        <input class="form-control" type="text" name="user[profile_instagram]" id="user_profile_instagram">
+                        <label for="user_profile_youtube">YouTube</label>
+                        <input class="form-control" type="text" name="user[profile_youtube]" id="user_profile_youtube">
+                    </div>
+                    <div class="btn-form-wrapper">
+                        <button type="submit" data-view-component="true" class="btn-form">Update profile</button>
+                    </div>                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
