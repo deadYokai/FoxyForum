@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' && realpath(__FILE__) == realpath($_SERVE
 require(dirname(__FILE__)."/config.php");
 require_once dirname(__FILE__).'/yml.php';
 
-$langYml = yamlLoader::yamlLoad(dirname(__FILE__).'/langs/'.$lang.'.yml');
+$langYml = yamlLoader::yamlLoad(dirname(__FILE__).'/langs/'.Config::$lang.'.yml');
 $langRank = $langYml['rank'];
 
 $top = <<<HTML

@@ -1,0 +1,5 @@
+home: Home
+rank:
+  admin: Administrator
+  moderator: Moderator
+  user: User
