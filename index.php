@@ -3,9 +3,15 @@ require("core/core.php");
 
 echo $top;
 ?>
-
     <div class="content-wrapper">
         <div class="content">
+            <div class="tree">
+                <ul>
+                    <li><a href="/"><?=$langYml['home']?></a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Topic</a></li>
+                </ul>
+            </div>
             <div class="cblock">
                 <div class="bcat">
                     <div class="title">Category one</div>
@@ -72,5 +78,4 @@ echo $top;
             </div>
         </div>
     </div>
-
 <?=$bottom?>

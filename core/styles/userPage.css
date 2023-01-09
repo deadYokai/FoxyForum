@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: #F7B801;
+    padding: 0 10px;
+    text-decoration: none;
+}
+a:hover {
+    /* background: red; */
+    color: #E4572E;
+}
+h1, h2, h3, h4 {
+    color: white;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 18pt;
+}
+body {
+    font-size:17px;
+    line-height:1.47059;
+    font-weight:400;
+    letter-spacing:-.022em;
+    font-family:"SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #080702;
+    color: grey;
+    /* background-image: url(../image/cyberpunk-mask.jpg); */
+    background-size: 100% 100%;
+}
+p {
+    color: white;
+    text-indent: 1em;
+}
+.page {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+
+.navigation {
+    margin-right: 30px;
+    min-width: 200px;
+    height: 200px;
+    /* background: rgba(0, 0, 0, 0.6); */
+    background: #161313;
+    border-radius: 15px;
+    box-shadow: #000 0px 15px 10px;
+}
+.navigation > div {
+    width: 100%;
+    height: 5px;
+    background: #DE3132;
+    margin-bottom: 5px;
+}
+.navigation > a{
+    display: block;
+    font-size: 13pt;
+    font-weight: 800;
+    padding: 5px 10px;
+    color: white;
+}
+.navigation > a:hover{
+    background: #DE3132;
+    color: white;
+    /* border-radius: 5px; */
+}
+
+
+.infopage {
+    max-width: 1000px;
+    /* background: green; */
+}
+.infoBlock {
+    background: #161313;
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+    padding: 20px 50px;
+    border-radius: 15px;
+    box-shadow: #000 0px 15px 10px;
+    /* border-top: 5px solid #DE3132; */
+}
+.infoBlock > div {
+    margin: 30px 0;
+}
+.infoBlock > h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.userInfo h2, h3, h4 {
+    text-align: center;
+    text-indent: 0;
+    margin-bottom: 5px;
+}
+.userInfo p {
+    text-align: center;
+    text-indent: 0;
+}
+.userInfoOther {
+    display: flex;
+    justify-content: space-around;
+}
+
+.userInfoAbout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutUser > img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.aboutUser > h4 {
+    margin-top: 5px;
+    text-transform: none;
+    color: #F7B801;
+}
+.aboutText {
+    margin: 0 30px 30px 30px;
+}
+.userInfoOther > div {
+    width: 200px;
+}
+.userInfoLinks > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.userInfoLinks > div > a{
+    width: 100px;
+}
+
+
+.userAchivments {
+    
+}
+.achivementsBox {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.achivment {
+    display: flex;
+    padding: 10px 30px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    align-items: center;
+}
+.achivment:hover{
+    background: #E4572E;
+    cursor: pointer;
+}
+.achivment img{
+    height: 30px;
+    width: 30px;
+}
+
+.userWarnings p {
+    color: #F7B801;
+    margin: 20px 0;
+}
+
+.userSignature {
+
+}
+
+.settingsForm {
+    margin: 0 100px;
+    margin-bottom: 20px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-control {
+    width: 300px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.settingsForm textarea {
+    height: 80px;
+}
+.btn-form {
+    background: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    color: black;
+    font-weight: 600;
+    font-size: 12pt;
+    margin-top: 30px;
+}
+.btn-form:hover{
+    background: #E4572E;
+    color: white;
+}
+.btn-form-wrapper {
+    text-align: center;
+}

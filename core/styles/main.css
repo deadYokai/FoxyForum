@@ -1,6 +1,8 @@
 *{
     margin: 0%;
     padding: 0%;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 html, body{
@@ -9,32 +11,210 @@ html, body{
 }
 
 body{
-    background: #080702;
+    background: #0e0c0a;
 }
 
 a{
     color: #F7B801 !important;
 }
 
-.content-wrapper{
-    padding: 245px 32px 15px;
+.top-wrapper{
+    display: block;
+    position: relative;
+    padding: 32px;
+    height: 72px;
+}
+
+.top-wrapper .title{
+    line-height: 72px;
+    font-size: 36px;
+    color: #E4572E;
+    padding: 16px;
+}
+
+.top-wrapper .member{
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    padding: 32px;
+    line-height: unset;
+}
+
+.top-wrapper .member .mblock{
+    display: flex;
+    color: #F7B801;
+    width: 256px;
+    height: 72px;
+    padding: 16px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: #000 0px 10px 20px;
+    background: linear-gradient(135deg, #201812, #181712);
+}
+
+.top-wrapper .member .mblock:hover{
+    cursor: pointer;
+    background: linear-gradient(135deg, #d66a49, 60%, #E4572E);
+}
+
+
+.top-wrapper .mblock .tinfo{
+    line-height: 36px;
+}
+
+.top-wrapper .member .mblock:hover .tinfo .mname{
+    color: #201812;
+}
+
+.top-wrapper .member .mblock:hover .tinfo .rank, .top-wrapper .mblock:hover .arr span{
+    color: #333;
+}
+
+.top-wrapper .mblock .arr {
+	line-height: 72px;
+	float: right;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 16px;
+	right: 5px;
+}
+
+
+.top-wrapper .mblock .micon{
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    padding: 4px;
+    text-align: center;
+    background: #E4572E;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.top-wrapper .mblock .tinfo div{
     display: block;
 }
 
-.content-wrapper .content .bcat{
-    background: #161313;
+.top-wrapper .mblock .tinfo .mname{
+    color: #E4572E;
+    font-size: 24px;
+}
+
+.content-wrapper{
+    padding: 32px 46px;
+    display: block;
+}
+
+.content-wrapper .content .bcat, .content-wrapper .content .btopic .tmsg{
+    background: linear-gradient(135deg, #181515,#161313);
     border-radius: 15px;
     padding: 10px;
-    box-shadow: #000 0px 15px 10px;
+    box-shadow: #000 0px 10px 25px;
     margin-bottom: 25px;
 }
 
-.content .bcat .title{
+.content .bcat .title, .content .btopic .title{
     display: block;
     font-size: 28px;
     padding: 15px;
     padding-top: 10px;
     color: #fff;
+}
+
+.btopic .tmsg .leftblock, .btopic .tmsg .content, .btopic .tmsg{
+    display: flex;
+}
+
+.btopic .theader, .btopic .theader .title, .btopic .theader .btn-create-post{
+    display: flex;
+}
+
+.btopic .theader .title{
+    flex: 1;
+    line-height: 64px;
+}
+
+.btopic .theader .btn-create-post{
+    padding: 16px 32px;
+    border-radius: 25px;
+    height: 32px;
+    color: #d66a49;
+    line-height: 32px;
+    text-align: center;
+    box-shadow: #000 0px 10px 20px;
+    background: linear-gradient(135deg, #201812, #181712);
+}
+
+.btopic .member{
+    color: #F7B801;
+    width: 128px;
+    height: 100%;
+    min-height: 256px;
+    position: relative;
+    text-align: center;
+}
+
+.btopic .member .mblock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 128px;
+    padding: 16px;
+    border-radius: 25px;
+    box-shadow: #000 0px 10px 20px;
+    background: linear-gradient(135deg, #201812, #181712);
+}
+
+.btopic .member .mblock .msblock{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btopic .mblock .micon{
+    width: 64px;
+    height: 64px;
+    padding: 4px;
+    line-height: 64px;
+    text-align: center;
+    background: #E4572E;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.btopic .mblock .tinfo div{
+    display: block;
+}
+
+.btopic .mblock .tinfo .mname{
+    color: #E4572E;
+    font-size: 18px;
+}
+
+.btopic .tmsg .content{
+    flex: 1;
+    position: relative;
+    color: #fff;
+}
+
+.btopic .tmsg .content .msg{
+    padding: 16px 32px 32px;
+}
+
+.btopic .tmsg .content .msg-bottom{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+}
+
+.btopic .tmsg .content .msg-bottom .datetime, .btopic .tmsg .content .msg-bottom .msgnum{
+    display: flex;
+    padding-left: 16px;
 }
 
 .bcat .bcatc{
@@ -60,7 +240,7 @@ a{
 }
 
 .bcat .subd{
-    min-height: 64px;
+    min-height: 32px;
 }
 
 .bcat .tname span{
@@ -68,4 +248,42 @@ a{
     font-size: 25px;
 }
 
+.bcat .bcatt .tname span{
+    font-size: 18px;
+}
 
+.content .tree{
+    display: block;
+}
+
+.content .tree ul{
+    display: flex;
+    height: 32px;
+    padding: 15px;
+    line-height: 32px;
+}
+
+.content .tree ul li{
+    display: flex;
+}
+
+.content .tree ul li::after{
+    content: "/";
+    font-size: 24px;
+    padding: 0px 10px;
+    color: #E4572E;
+    line-height: 36px;
+    
+}
+
+.content .tree ul li:last-child::after{
+    display: none;
+}
+
+.bot-wrapper{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 32px;
+}
